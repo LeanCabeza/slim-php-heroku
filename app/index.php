@@ -12,11 +12,13 @@ require __DIR__ . '/../vendor/autoload.php';
 // Instantiate App
 $app = AppFactory::create();
 
+$app->setBasePath('/app');
+
 // Add error middleware
 $app->addErrorMiddleware(true, true, true);
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("GET => Bienvenido!!! a SlimFramework de Lean Cabeza");
+    $response->getBody()->write("GET => Bienvenido!!! a SlimFramework de Lean Cabezaaaa");
     return $response;
 
 });
