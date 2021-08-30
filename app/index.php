@@ -16,7 +16,7 @@ $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("GET => Bienvenido!!! a SlimFramework");
+    $response->getBody()->write("GET => Bienvenido!!! a SlimFramework de Lean Cabeza");
     return $response;
 
 });
